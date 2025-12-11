@@ -23,6 +23,7 @@
     "express": "^4.19.2",
     "express-session": "^1.18.2",
     "googleapis": "^133.0.0",
+    "ioredis": "^5.8.2",
     "twilio": "^4.22.2"
   },
   "devDependencies": {
