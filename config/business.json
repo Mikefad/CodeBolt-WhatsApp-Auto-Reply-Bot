@@ -1,0 +1,19 @@
+{
+  "businessName": "CodeBolt Cafe",
+  "hours": "Mon-Sat: 9am-8pm",
+  "address": "123 Bolt Street, Lagos",
+  "whatsappNumber": "whatsapp:+1234567890",
+  "templates": {
+    "greeting": "Hi there, thanks for contacting CodeBolt Cafe! How can we help you today?",
+    "hours": "Our opening hours are Mon-Sat: 9am-8pm.",
+    "address": "We are located at 123 Bolt Street, Lagos.",
+    "booking": "To book a table, please reply with your name, date, time, and number of people.",
+    "fallback": "Thanks for your message! A member of our team will reply as soon as possible. In the meantime, you can ask about our opening hours, location, or bookings."
+  },
+  "keywordMapping": {
+    "greeting": ["hi", "hello", "hey"],
+    "hours": ["hours", "time", "open"],
+    "address": ["address", "location", "where are you"],
+    "booking": ["book", "reservation", "appointment"]
+  }
+}

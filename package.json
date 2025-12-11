@@ -1,0 +1,39 @@
+{
+  "name": "codebolt-whatsapp-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp Auto-Reply Bot for small businesses using Twilio and Google Sheets",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "whatsapp",
+    "twilio",
+    "google-sheets",
+    "auto-reply",
+    "bot"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.2",
+    "googleapis": "^133.0.0",
+    "twilio": "^4.22.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.7.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "globals": "^16.5.0",
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
