@@ -3,6 +3,7 @@ const session = require('express-session');
 const config = require('./config/env');
 const { loadBusinessConfig, watchBusinessConfig } = require('./config/businessConfig');
 const Logger = require('./utils/logger');
+const sessionStore = require('./services/sessionStore');
 const TwilioService = require('./services/twilioService');
 const GoogleSheetsService = require('./services/googleSheetsService');
 const createWebhookRouter = require('./routes/webhook');
@@ -48,6 +49,7 @@ app.use(
     secret: config.dashboard.sessionSecret,
     resave: false,
     saveUninitialized: false,
+    store: sessionStore,
     cookie: {
       httpOnly: true,
       sameSite: 'lax',
