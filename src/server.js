@@ -39,6 +39,10 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+if (config.env === 'production') {
+  app.set('trust proxy', 1);
+}
+
 app.use(
   session({
     secret: config.dashboard.sessionSecret,
